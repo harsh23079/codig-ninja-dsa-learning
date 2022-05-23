@@ -115,6 +115,7 @@ BinaryTreeNode<int>* takeInputLevelOrder(){
 }
 void printLevelWise(BinaryTreeNode<int> *root) {
 	if(root == NULL){
+		cout<<"-1";
         return;
     }
     queue<BinaryTreeNode<int>*> pendingNodes;
