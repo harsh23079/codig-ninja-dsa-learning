@@ -66,7 +66,8 @@ void printRunningMedian(int *arr, int n) {
             min_pq.push(arr[i]);
         }
         
-        if(abs(max_pq.size() - min_pq.size() > 1)){
+        if(abs((int)max_pq.size() - (int)min_pq.size()) > 1)
+        {
             if(max_pq.size() > min_pq.size()){
                 min_pq.push(max_pq.top());
                 max_pq.pop();
